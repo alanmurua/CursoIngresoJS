@@ -6,7 +6,7 @@ function mostrar()
 {
 	var dato
 	dato = prompt ("valor")
-	dato = document.getElementById ("valor").value
+	 document.getElementById ("elNombre").value = dato
 
 
 }
