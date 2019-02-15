@@ -1,14 +1,15 @@
 
 function mostrar()
 {
-var alto
-var base
-var area
-var perimetro
-alto = parseInt (prompt ("alto de un rectangulo"))
-base = parseInt (prompt ("ancho de un rectangulo"))
-area = alto * base
-perimetro = (alto*2) + (base*2)
-alert ("el perimetro es de " +perimetro)
+var mascota1
+var mascota2    
+var mascota1Kilos
+var mascota2Kilos
+mascota1Kilos = parseInt (15)
+mascota2Kilos = parseInt (10)
+mascota1 = "toby"
+mascota2 = "wanda"
+kilosTotales = mascota1Kilos + mascota2Kilos
+alert ("tenes dos mascotas "+mascota1+ " y "+mascota2+" que pesan "+mascota1Kilos+ " y "+mascota2Kilos+" kilos. La suma de los kilos es de "+kilosTotales)
 
 }
