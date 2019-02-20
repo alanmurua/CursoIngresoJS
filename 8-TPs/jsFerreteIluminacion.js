@@ -10,40 +10,43 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-     var lamparitas
-     var cantidadLamparas
-     var marca
-     var precioDescuento
-     var lamparasMasCantidad
-     var impuestos
-     lamparitas = 35
-     cantidadLamparas  = document.getElementById("Cantidad").value 
-     marca = document.getElementById("Marca").value
-     lamparasMasCantidad = parseInt (lamparitas) * parseInt (cantidadLamparas)
-     if (cantidadLamparas >= 6)
-    precioDescuento = 50 * lamparasMasCantidad / 100
-     else
-     if (cantidadLamparas == 5 && marca === "ArgentinaLuz")
-     precioDescuento = (40 * lamparasMasCantidad) / 100
-     if (cantidadLamparas ==5 && marca !== "ArgentinaLuz" )
-     precioDescuento = (30 * lamparasMasCantidad) / 100
-     else
-     if(cantidadLamparas ==4 && marca ==="ArgentinaLuz" || marca === "FelipeLamparas")
-     precioDescuento = (25 * lamparasMasCantidad) / 100
-     if (cantidadLamparas ==4 && marca !=="ArgentinaLuz" || marca !== "FelipeLamparas")
-     precioDescuento = (20 * lamparasMasCantidad) / 100
-     else
-     if(cantidadLamparas == 3 && marca === "ArgentinaLuz")
-     precioDescuento = (15 * lamparasMasCantidad) / 100
-     if (cantidadLamparas == 3 && marca === "FelipeLamparas")
-     precioDescuento = (10 * lamparasMasCantidad) / 100
-     if (cantidadLamparas ==3 && marca !=="ArgentinaLuz" || marca !== "FelipeLamparas")
-     precioDescuento = (5 * lamparasMasCantidad) / 100
-     else
-     document.getElementById("precioDescuento").value = precioDescuento
-     if (preciodescuento > 120)
-     impuestos = 10* preciodescuento / 100
-     alert("IIBB usted pago " +impuesto+" en impuesto")
+    var total
+    var marca
+    var precio = parseInt (35)
+    var cantidad
+     
+     cantidad = document.getElementById("cantidad").Value
+     parseInt (cantidad)
+     marca = document.getElementById("marca").Value
+     
+
+     switch (cantidad){
+         case 5:
+         if(marca == "argentinaluz")
+         total = cantidad * precio *0.6
+         else
+         total = cantidad * precio *0.7
+         break;
+         case 4:
+         if (narca == "argentinaluz" || "FelipeLamparas")
+         total = cantidad * precio * 0.6
+         else
+         total = cantidad * precio *0.7
+         break;
+         case 3:
+         if (marca == "argentinaluz")
+
+
+
+         brak;
+         default :
+         if (cantidad >5)
+         total = cantidad * precio *0.5
+
+
+
+
+
 
     
  
