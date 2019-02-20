@@ -12,26 +12,47 @@ function CalcularPrecio ()
 {
      var lamparitas
      var cantidadLamparas
-     var precioLamparas
-     var descuento
      var marca
      var precioDescuento
+     var lamparasMasCantidad
+     var impuestos
      lamparitas = 35
      cantidadLamparas  = document.getElementById("Cantidad").value 
      marca = document.getElementById("Marca").value
-     
+     lamparasMasCantidad = parseInt (lamparitas) * parseInt (cantidadLamparas)
      if (cantidadLamparas >= 6)
-    precioDescuento = 50 * (lamparitas * cantidadLamparas) / 100
-    document.getElementById("precioDescuento").value = precioDescuento
-     
+    precioDescuento = 50 * lamparasMasCantidad / 100
+     else
+     if (cantidadLamparas == 5 && marca === "ArgentinaLuz")
+     precioDescuento = (40 * lamparasMasCantidad) / 100
+     if (cantidadLamparas ==5 && marca !== "ArgentinaLuz" )
+     precioDescuento = (30 * lamparasMasCantidad) / 100
+     else
+     if(cantidadLamparas ==4 && marca ==="ArgentinaLuz" || marca === "FelipeLamparas")
+     precioDescuento = (25 * lamparasMasCantidad) / 100
+     if (cantidadLamparas ==4 && marca !=="ArgentinaLuz" || marca !== "FelipeLamparas")
+     precioDescuento = (20 * lamparasMasCantidad) / 100
+     else
+     if(cantidadLamparas == 3 && marca === "ArgentinaLuz")
+     precioDescuento = (15 * lamparasMasCantidad) / 100
+     if (cantidadLamparas == 3 && marca === "FelipeLamparas")
+     precioDescuento = (10 * lamparasMasCantidad) / 100
+     if (cantidadLamparas ==3 && marca !=="ArgentinaLuz" || marca !== "FelipeLamparas")
+     precioDescuento = (5 * lamparasMasCantidad) / 100
+     else
+     document.getElementById("precioDescuento").value = precioDescuento
+     if (preciodescuento > 120)
+     impuestos = 10* preciodescuento / 100
+     alert("IIBB usted pago " +impuesto+" en impuesto")
 
+    
  
      
 
 
     
 
-   
+     
     
     
 
