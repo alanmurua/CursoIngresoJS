@@ -12,29 +12,30 @@ function CalcularPrecio ()
 {
     var total
     var marca
-    var precio = parseInt (35)
+    var precio = 35
     var cantidad
      
      cantidad = document.getElementById("cantidad").Value
      parseInt (cantidad)
+     parseInt (precio)
      marca = document.getElementById("marca").Value
-     
-
-     switch (cantidad){
+        switch (cantidad){
          case 5:
-         if(marca == "argentinaluz")
+         if(marca == "ArgentinaLuz")
          total = cantidad * precio *0.6
          else
          total = cantidad * precio *0.7
          break;
          case 4:
-         if (narca == "argentinaluz" || "FelipeLamparas")
+         if (narca == "ArgentinaLuz" || "FelipeLamparas")
          total = cantidad * precio * 0.6
          else
          total = cantidad * precio *0.7
          break;
          case 3:
-         if (marca == "argentinaluz")
+         if (marca == "ArgentinaLuz")
+         total = cantidad * precio *0.15
+         if (marca == "FelipeLamparas")
 
 
 
@@ -42,6 +43,7 @@ function CalcularPrecio ()
          default :
          if (cantidad >5)
          total = cantidad * precio *0.5
+         document.getElementById("precioDescuento").value = total
 
 
 
@@ -60,6 +62,6 @@ function CalcularPrecio ()
     
 
 
-
+}
 
 }
