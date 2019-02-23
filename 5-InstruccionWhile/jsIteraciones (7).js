@@ -11,9 +11,9 @@ function mostrar()
     contador++;
     numero = prompt ("ingrese un numero");
     numero = parseInt (numero);
-    while (isNaN(numero)){
-    numero = prompt ("Error, ingrese un numero");
-    numero = parseInt (numero);
+      while (isNaN(numero)){
+        numero = prompt ("Error, ingrese un numero");
+        numero = parseInt (numero);
   }
   suma += numero; //+= es igual a suma = suma + numero
 
