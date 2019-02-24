@@ -5,16 +5,17 @@ function mostrar()
 	var suma=0;
   var respuesta='si';
   var usuario
-  usuario = prompt ("ingrese la cantidad de numeros")
-  usuario = parseInt (usuario)
-  while (contador < usuario){
+  respuesta = confirm ()
+  while (respuesta != false){
     contador++;
     numero = prompt ("ingrese un numero");
     numero = parseInt (numero);
+    respuesta = confirm()
       while (isNaN(numero)){
         numero = prompt ("Error, ingrese un numero");
         numero = parseInt (numero);
-  }
+  break;
+      }
   suma += numero; //+= es igual a suma = suma + numero
 
 promedio = suma / contador;

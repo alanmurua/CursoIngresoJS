@@ -1,17 +1,17 @@
 function mostrar()
 {
 
-  var contador=0;
+  var contador =0;
   var numero
   var sumaNegativo
   var sumaPositivos
-  var contadorPositivos=0
-  var contadorNegativos=0
-  var contadorCeros=0
-  var cantidadPares=0
+  var contadorPositivos =0;
+  var contadorNegativos =0;
+  var contadorCeros =0;
+  var cantidadPares =0;
 	//declarar contadores y variables
 
-  var respuesta ="si";
+  var respuesta = true;
    do{
    do{
     numero = prompt ("ingrese un numero")
@@ -29,8 +29,8 @@ function mostrar()
    if   (numero % 2==0){
           cantidadPares++;
           }
-          respuesta = prompt ();
-  }while (respuesta == "si");
+          respuesta = confirm ();
+  }while (respuesta == true);
 
 
           }
