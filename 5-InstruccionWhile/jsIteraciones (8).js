@@ -4,14 +4,14 @@ function mostrar()
 	var contador=0;
 	var positivo=0;
   var negativo=1;
-  var usuario
-  var numero
-  usuario = prompt ("ingrese la cantidad de numeros")
-  usuario = parseInt (usuario)
-  while (contador < usuario){
+  var numero 
+  var respuesta
+  respuesta = confirm ();
+  while (respuesta != false){
   contador++;
   numero = prompt("ingrese un numero")
   numero = parseInt (numero)
+  respuesta = confirm ();
   if (numero <0)
   negativo =numero * negativo
   else

@@ -13,7 +13,6 @@ function mostrar()
 
   var respuesta = true;
    do{
-   do{
     numero = prompt ("ingrese un numero")
     numero = parseInt (numero)
   }while (isNaN(numero));
