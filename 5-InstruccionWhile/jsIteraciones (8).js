@@ -7,21 +7,21 @@ function mostrar()
   var numero 
   var respuesta
   respuesta = confirm ();
-  while (respuesta != false){
-  contador++;
-  numero = prompt("ingrese un numero")
-  numero = parseInt (numero)
-  respuesta = confirm ();
-  if (numero <0)
-  negativo =numero * negativo
-  else
-  positivo =numero + positivo
+  while (respuesta != false) {
+    contador++;
+    numero = prompt("ingrese un numero")
+    numero = parseInt (numero)
+    respuesta = confirm ();
+    if (numero <0)
+      negativo =numero * negativo
+    else
+      positivo =numero + positivo
 
 
 
 
 
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+    document.getElementById('suma').value=positivo;
+    document.getElementById('producto').value=negativo;
   }
 }//FIN DE LA FUNCIÓN

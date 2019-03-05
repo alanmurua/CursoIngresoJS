@@ -1,43 +1,40 @@
-function mostrar()
-{
+function mostrar() {
 
   var contador =0;
   var numero
-  var sumaNegativo
-  var sumaPositivos
+  var sumaNegativo = 0;
+  var sumaPositivos = 0;
   var contadorPositivos =0;
   var contadorNegativos =0;
   var contadorCeros =0;
   var cantidadPares =0;
-	//declarar contadores y variables
+  //declarar contadores y variables
 
   var respuesta = true;
-   do{
-    numero = prompt ("ingrese un numero")
-    numero = parseInt (numero)
-  }while (isNaN(numero));
-   if   (num <0) {
+  do{
+    do{
+      numero = prompt ("ingrese un numero")
+      numero = parseInt (numero)
+    } while (isNaN(numero));
+    if(numero < 0) {
       sumaNegativo += numero;
       contadorNegativos++;
-  }else{
-   if   (numero > 0){
-          sumaPositivos += numero;
-          contadorPositivos++;
-  }else{
-          contadorCeros++;
-   if   (numero % 2==0){
+    }else{
+      if(numero > 0) {
+        sumaPositivos += numero;
+        contadorPositivos++;
+      } else {
+        contadorCeros++;
+        if(numero % 2 == 0){
           cantidadPares++;
-          }
-          respuesta = confirm ();
+        }
+      }
+    }
+    respuesta = confirm ();
   }while (respuesta == true);
-
-
-          }
-
-  }
+  document.write ("promedio de negativos: " + (sumaNegativo / contadorNegativos));
 
 
 
-
-
+  
 }//FIN DE LA FUNCIÓN
