@@ -9,8 +9,8 @@ function sumar()
     var sumar
     num1 = document.getElementById("numeroUno").value
     num2 = document.getElementById("numeroDos").value
-sumar = parseInt (num1) + parseInt (num2)
-alert (" la suma es " + sumar)
+    sumar = parseInt (num1) + parseInt (num2)
+    alert (" la suma es " + sumar)
 }
 
 function restar()
@@ -20,8 +20,8 @@ function restar()
     var restar
     num1 = document.getElementById("numeroUno").value
     num2 = document.getElementById("numeroDos").value
-restar = parseInt (num1) - parseInt (num2)
-alert (" la resta es " + restar)
+    restar = parseInt (num1) - parseInt (num2)
+    alert (" la resta es " + restar)
 }
 
 function multiplicar()
@@ -31,8 +31,8 @@ function multiplicar()
     var multiplicar
     num1 = document.getElementById("numeroUno").value
     num2 = document.getElementById("numeroDos").value
-multiplicar = parseInt (num1) * parseInt (num2)
-alert (" la multiplicacion es " + multiplicar)
+    multiplicar = parseInt (num1) * parseInt (num2)
+    alert (" la multiplicacion es " + multiplicar)
 }
 
 function dividir()
@@ -42,7 +42,7 @@ function dividir()
     var dividir
     num1 = document.getElementById("numeroUno").value
     num2 = document.getElementById("numeroDos").value
-dividir = parseInt (num1) / parseInt (num2)
-alert (" la division es " + dividir)
+    dividir = parseInt (num1) / parseInt (num2)
+    alert (" la division es " + dividir)
 }
 

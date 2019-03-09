@@ -1,6 +1,5 @@
 function mostrar() {
 
-  var contador =0;
   var numero
   var sumaNegativo = 0;
   var sumaPositivos = 0;

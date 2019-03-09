@@ -1,16 +1,12 @@
 function mostrar()
 {
-
-  var contador=0;
   var numero
   var numeroMaximo
   var numeroMinimo
   var primeraVez = true
   var respuesta
   // declarar variables
-
   
-
   do{
     do{
       numero = prompt ("ingrese un numero")
@@ -20,7 +16,7 @@ function mostrar()
       primeraVez = false;
       numeroMaximo = numero;
       numeroMinimo = numero;
-    }else{
+    } else {
       if (numero > numeroMaximo){
         numeroMaximo = numero
       }
@@ -32,4 +28,7 @@ function mostrar()
   } while (respuesta != false);
   document.getElementById("maximo").value = numeroMaximo
   document.getElementById("minimo").value = numeroMinimo
+
 }//FIN DE LA FUNCIÓN
+  
+

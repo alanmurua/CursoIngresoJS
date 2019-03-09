@@ -8,7 +8,7 @@ function mostrarAumento()
     var descuento
     var porcentaje
     num1 = parseInt (document.getElementById("importe").value)
-    porcentaje = num1 * 0.25
+    porcentaje = num1 * (25 / 100)
     descuento = num1 - parseInt(porcentaje)
     document.getElementById("resultado").value = descuento
 }

@@ -10,40 +10,49 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    var total
-    var marca
+
     var precio = 35
     var cantidad
-     
-     cantidad = document.getElementById("cantidad").Value
-     parseInt (cantidad)
-     parseInt (precio)
-     marca = document.getElementById("marca").Value
-        switch (cantidad){
-         case 5:
-         if(marca == "ArgentinaLuz")
-         total = cantidad * precio *0.6
-         else
-         total = cantidad * precio *0.7
-         break;
-         case 4:
-         if (narca == "ArgentinaLuz" || "FelipeLamparas")
-         total = cantidad * precio * 0.6
-         else
-         total = cantidad * precio *0.7
-         break;
-         case 3:
-         if (marca == "ArgentinaLuz")
-         total = cantidad * precio *0.15
-         if (marca == "FelipeLamparas")
+    var marca
+    var total
+    var totalImpuestos
+    cantidad = document.getElementById("Cantidad").Value
+    cantidad = parseInt (cantidad)
+    precio = parseInt (precio)
+    total = parseInt (total)
+    marca = document.getElementById("Marca").Value
+    switch (cantidad){
+        case 5:
+        if (marca == "ArgentinaLuz")
+        total = cantidad * precio * 0.4
+        else 
+        total = cantidad * precio * 0.3
+        break;
+        case 4:
+        if (marca == "ArgentinaLuz" || "FelipeLamparas")
+        total = cantidad * precio * 0.25
+        else
+        total = cantidad * precio * 0.20
+        break;
+        case 3:
+        if (marca == "ArgentinaLuz")
+        total = cantidad * precio * 0.15
+        if (marca == "FelipeLamparas")
+        total = cantidad * precio * 0.10
+        else
+        total = cantidad * precio * 0.05
+        break;
+        default:
+        if (cantidad > 5)
+        total = cantidad * precio * 0.5
+    }
+    if (total > 120){
+        totalImpuestos = (total * 10) /100
+        alert ("Usted pago " +totalImpuestos+ " pesos por un impuesto del 10%")
+    }
+    document.getElementById("precioDescuento").value = total
 
-
-
-         brak;
-         default :
-         if (cantidad >5)
-         total = cantidad * precio *0.5
-         document.getElementById("precioDescuento").value = total
+        
 
 
 
@@ -62,6 +71,6 @@ function CalcularPrecio ()
     
 
 
-}
+
 
 }

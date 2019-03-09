@@ -13,9 +13,9 @@ function mostrar()
     numero = parseInt (numero)
     respuesta = confirm ();
     if (numero <0)
-      negativo =numero * negativo
+      negativo = numero * negativo
     else
-      positivo =numero + positivo
+      positivo = numero + positivo
 
 
 

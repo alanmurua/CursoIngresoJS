@@ -5,11 +5,11 @@ function sumar()
 {
 var num1
 var num2
-var sumar
+var suma
 num1 = document.getElementById("numeroUno").value
 num2 = document.getElementById("numeroDos").value
-sumar = parseInt(num1) + parseInt(num2)
+suma = parseInt(num1) + parseInt(num2)
 
-alert("la suma es " + sumar );
+alert("la suma es " + suma );
 }
 
