@@ -1,14 +1,11 @@
 function mostrar()
 {
-
-	var contador=0;
-	var positivo=0;
+  var positivo=0;
   var negativo=1;
   var numero 
   var respuesta
   respuesta = confirm ();
   while (respuesta != false) {
-    contador++;
     numero = prompt("ingrese un numero")
     numero = parseInt (numero)
     respuesta = confirm ();

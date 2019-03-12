@@ -3,7 +3,7 @@ function mostrar()
 
 	var contador=0;
 	var suma=0;
-  var respuesta='si';
+  var respuesta;
   respuesta = confirm ()
   while (respuesta != false) {
     contador++;
